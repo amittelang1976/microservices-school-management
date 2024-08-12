@@ -5,34 +5,34 @@ services:
     ports:
       - 9411:9411
   service-discovery-container:
-    image: studentms/eureka-server-school-boot:0.0.1
+    image: amittelang1976/eureka-server-school-boot:0.0.1
     ports:
       - 8761:8761
   cloud-config-container:
-    image: studentms/config-server-school-boot:0.0.1
+    image: amittelang1976/config-server-school-boot:0.0.1
     ports:
       - 8888:8888
   api-gateway-container:
-    image: studentms/api-gateway-school-boot:0.0.1
+    image: amittelang1976/api-gateway-school-boot:0.0.1
     ports:
       - 8072:8072
   attendance-service-container:
-    image: studentms/attendance-school-boot:0.0.1
+    image: amittelang1976/attendance-school-boot:0.0.1
     ports:
       - 8085:8085
   course-service-container:
-    image: studentms/course-service-school-boot:0.0.1
+    image: amittelang1976/course-service-school-boot:0.0.1
     ports:
       - 8083:8083
   faculty-service-container:
-    image: studentms/faculty-service-school-boot:0.0.1
+    image: amittelang1976/faculty-service-school-boot:0.0.1
     ports:
       - 8082:8082
   lesson-service-container:
-    image: studentms/lesson-service-school-boot:0.1.0
+    image: amittelang1976/lesson-service-school-boot:0.1.0
     ports:
       - 8084:8084
   user-service-container:
-    image: studentms/user-service-school-boot:0.1.0
+    image: amittelang1976/user-service-school-boot:0.1.0
     ports:
       - 8081:8081
