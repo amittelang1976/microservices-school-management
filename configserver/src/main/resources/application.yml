@@ -2,9 +2,20 @@ server:
   port: 8888
 
 spring:
+  config:
+    name: configserver
+  profiles:
+    include: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/amittelang1976/microservices-school-configs.git
-          default-label: master
+        native:
+          search-locations: classpath:/config-repo
+
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/amittelang1976/microservices-school-configs.git
+#          default-label: master
